@@ -49,6 +49,10 @@
 		"description": "Allows bearings to rotate in sequence. Perfect for building transforming creations. Needs to be connected to bearings. Activated by connecting a trigger or driver's seat to the controller.",
 		"title": "Controller"
 	},
+	"276fd55b-ae54-4a7a-ace6-fddd2d3370a9": {
+		"description": "Mine rocks and trees with immense ease! Be sure to connect it to a battery container for it to work (WIP). Plasma drill industries is not liable for any damage to person cause by our product.",
+		"title": "Plasma drill"
+	},
 	"12cc6e9a-6d66-4a9a-bb59-b13a50373fd8": {
 		"description": "Shot or hit capsule to release a friendly woc.",
 		"title": "Woc Capsule"
