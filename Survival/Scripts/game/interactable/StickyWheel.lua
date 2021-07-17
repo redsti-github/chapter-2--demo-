@@ -14,7 +14,7 @@ function StickyWheel.server_onCollision( self, other, collisionPosition, selfPoi
 
 	self.Other = other
 	self.CollisionNormal = collisionNormal
-	self.time = 25
+	self.time = 10
 	self.isSticking = true
 	self.shape:getInteractable():setPublicData({true})
 end
@@ -29,6 +29,10 @@ function StickyWheel.server_onFixedUpdate( self, deltaTime )
 	if (self.time < 0) then
 		self.isSticking = false
 		self.shape:getInteractable():setPublicData({false})
+		return
+	end
+
+	if (type(self.Other) == "Character") then
 		return
 	end
 
@@ -75,6 +79,13 @@ function StickyWheel.server_onFixedUpdate( self, deltaTime )
 	sm.physics.applyImpulse(self.shape, -self.CollisionNormal * fractionalMass * 0.35, true)
 
 	self.time = self.time - 1
+
+	if (self.Other ~= nil) then
+		if (sm.exists(self.Other)) then
+			sm.physics.applyImpulse(self.Other, -dir * fractionalMass * 0.2645, true)
+			sm.physics.applyImpulse(self.Other, self.CollisionNormal * fractionalMass * 0.35, true)
+		end
+	end
 end
 
 
