@@ -1,0 +1,113 @@
+{
+	"partList": [
+		{
+			"uuid": "3e10ef67-383a-4b60-aa5b-b1173134e437",
+			"name": "obj_powertools_sawblade",
+			"renderable": "$SURVIVAL_DATA/Objects/Renderable/powertools/obj_powertools_sawblade.rend",
+			"color": "df7f01",
+			"cylinder": {
+				"diameter": 5,
+				"depth": 1,
+				"margin": 0.8,
+				"axis": "Y"
+			},
+			"scripted": {
+				"filename": "$SURVIVAL_DATA/Scripts/game/interactables/SawBlade.lua",
+				"classname": "SawBlade"
+			},
+			"rotationSet": "PropYmmNegYmm",
+			"sticky": "-Y+Y",
+			"physicsMaterial": "Mechanical",
+			"ratings": {
+				"density": 5,
+				"durability": 7,
+				"friction": 2,
+				"buoyancy": 1
+			},
+			"flammable": false,
+			"friction": 0.0,
+			"restitution": 0.0
+		},
+		{
+			"uuid": "276fd55b-ae54-4a7a-ace6-fddd2d3370a5",
+			"name": "obj_powertools_drill",
+			"renderable": "$SURVIVAL_DATA/Objects/Renderable/powertools/obj_powertools_drill.rend",
+			"color": "df7f01",
+			"hull": {
+				"x": 3,
+				"y": 3,
+				"z": 3,
+				"col": "$SURVIVAL_DATA/Objects/Collision/obj_powertools_drill.obj"
+			},
+			"scripted": {
+				"filename": "$SURVIVAL_DATA/Scripts/game/interactables/Drill.lua",
+				"classname": "Drill"
+			},
+			"rotationSet": "PropY",
+			"sticky": "-Y",
+			"physicsMaterial": "Mechanical",
+			"ratings": {
+				"density": 5,
+				"durability": 7,
+				"friction": 2,
+				"buoyancy": 1
+			},
+			"flammable": false,
+			"friction": 0.1
+		},
+		{
+			"uuid": "3e10ef67-383a-4b60-aa5b-b1173134e431",
+			"name": "obj_powertools_sticky_wheel",
+			"renderable": "$GAME_DATA/Objects/Renderable/vehicle/obj_vehicle_smallwheel.rend",
+			"color": "00ff00",
+			"cylinder": {
+				"diameter": 3,
+				"depth": 1,
+				"margin": 0.8,
+				"axis": "Z"
+			},
+			"scripted": {
+				"filename": "$SURVIVAL_DATA/Scripts/game/interactables/StickyWheel.lua",
+				"classname": "StickyWheel"
+			},
+			"rotationSet": "PropZmmNegZmm",
+			"sticky": "-Z+Z",
+			"physicsMaterial": "Mechanical",
+			"ratings": {
+				"density": 4,
+				"durability": 7,
+				"friction": 5,
+				"buoyancy": 3
+			},
+			"flammable": true,
+			"friction": 0.0
+		},
+		{
+			"uuid": "276fd55b-ae54-4a7a-ace6-fddd2d3370a9",
+			"name": "obj_powertools_plasma_drill",
+			"renderable": "$SURVIVAL_DATA/Objects/Renderable/powertools/obj_powertools_drill.rend",
+			"color": "df7f01",
+			"hull": {
+				"x": 3,
+				"y": 3,
+				"z": 3,
+				"col": "$SURVIVAL_DATA/Objects/Collision/obj_powertools_drill.obj"
+			},
+			"scripted": {
+				"filename": "$SURVIVAL_DATA/Scripts/game/interactables/PlasmaDrill.lua",
+				"classname": "PlasmaDrill"
+			},
+			"rotationSet": "PropY",
+			"sticky": "-Y",
+			"physicsMaterial": "Mechanical",
+			"ratings": {
+				"density": 5,
+				"durability": 7,
+				"friction": 2,
+				"buoyancy": 1
+			},
+			"flammable": false,
+			"friction": 0.1
+		}
+	]
+}
