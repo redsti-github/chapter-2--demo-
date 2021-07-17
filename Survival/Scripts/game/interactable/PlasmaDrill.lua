@@ -23,6 +23,16 @@ function PlasmaDrill.server_onFixedUpdate( self, deltaTime )
 			shape:getInteractable():setPublicData({1, result.pointWorld})
 		end
 	end
+
+	if (result.type == "character" and valid) then
+		local character = result:getCharacter()
+
+		if (character:isPlayer()) then
+			sm.event.sendToPlayer( character:getPlayer(), "sv_e_receiveDamage", { damage = 1 } )
+		else
+			--sm.event.sendToUnit( character:getUnit(), "sv_e_receiveDamage", { damage = 100 })
+		end
+	end
 end
 
 function IsTree( Uuid )
